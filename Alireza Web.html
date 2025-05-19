@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>علیرضا وب سایت</title>
+    <style>
+        /* تنظیمات کلی */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tahoma', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        /* هدر */
+        header {
+            background-color: #000000;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+        }
+        
+        header h1 {
+            color: #ffffff;
+            font-size: 2.8rem;
+            text-shadow: 0 2px 4px rgba(187, 134, 252, 0.3);
+        }
+        
+        /* نوار ناوبری */
+        nav {
+            background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+        
+        nav ul li a {
+            color: #bb86fc;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            padding: 12px 18px;
+            border-radius: 6px;
+            display: block;
+        }
+        
+        nav ul li a:hover {
+            color: #ffffff;
+            background-color: rgba(187, 134, 252, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(187, 134, 252, 0.2);
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 3px;
+            background-color: #bb86fc;
+            transition: width 0.3s ease;
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+            right: auto;
+            left: 0;
+        }
+        
+        /* محتوای اصلی */
+        main {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        section {
+            margin-bottom: 40px;
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        section:hover {
+            transform: translateY(-5px);
+        }
+        
+        section h2 {
+            color: #bb86fc;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        
+        /* کارت‌ها */
+        .card {
+            background-color: #252525;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #bb86fc;
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            background-color: #2a2a2a;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+        
+        .card h3 {
+            color: #ffffff;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .card p {
+            margin-bottom: 15px;
+        }
+        
+        /* دکمه‌ها */
+        .btn {
+            display: inline-block;
+            background-color: #bb86fc;
+            color: #000;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+        
+        .btn:hover {
+            background-color: #9b5cff;
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(155, 92, 255, 0.3);
+        }
+        
+        /* فوتر */
+        footer {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            border-top: 2px solid #333;
+        }
+        
+        footer p {
+            color: #888;
+            font-size: 1rem;
+        }
+        
+        /* افکت‌های اضافه */
+        .highlight {
+            color: #bb86fc;
+            font-weight: bold;
+        }
+        
+        /* رسپانسیو */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>سفارش <span class="highlight">حرفه‌ای</span> طراحی سایت</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">صفحه اصلی</a></li>
+            <li><a href="#">محصولات</a></li>
+            <li><a href="#">خدمات</a></li>
+            <li><a href="#">درباره ما</a></li>
+            <li><a href="#">تماس با ما</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section>
+            <h2>به سایت علیرضا خوش اومدی </h2>
+            <p>این یک سایت نمونه با <span class="highlight">تم مشکی</span> هست که توسط اینحانب درست شده است.</p>
+            <a href="#" class="btn">شروع کنید</a>
+            <a href="#" class="btn" style="background-color: #03DAC6; margin-right: 15px;">درباره ما</a>
+        </section>
+        
+        <section>
+            <h2>خدمات ویژه من</h2>
+            
+            <div class="card">
+                <h3>طراحی وب مدرن</h3>
+                <p>طراحی وب‌سایت‌های واکنشگرا و مدرن با آخرین تکنولوژی‌های روز دنیا که در تمام دستگاه‌ها به بهترین شکل نمایش داده می‌شوند.</p>
+                <a href="#" class="btn">مشاهده نمونه‌کارها</a>
+            </div>
+            
+            <div class="card">
+                <h3>توسعه اپلیکیشن</h3>
+                <p>توسعه اپلیکیشن‌های موبایل و دسکتاپ با کیفیت بالا و عملکرد عالی برای کسب و کار شما.</p>
+                <a href="#" class="btn">درخواست مشاوره رایگان</a>
+            </div>
+            
+            <div class="card">
+                <h3>بهینه‌سازی سئو</h3>
+                <p>بهبود رتبه سایت شما در نتایج موتورهای جستجو با استفاده از تکنیک‌های استاندارد و اخلاقی سئو.</p>
+                <a href="#" class="btn">تحلیل رایگان سایت</a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p><h3>این سایت به صورت تستی توسط من نوشته شده برای پروژه آقای توسل نیا</h3> </p>
+    </footer>
+</body>
+</html>
